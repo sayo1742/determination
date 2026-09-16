@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Whispering Rain</title>
+  <meta name="description" content="Whispering Rain / diary / gallery / character site">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="hero" id="siteHero">
+      <div class="hero-inner">
+        <div class="hero-mark">Whispering Rain</div>
+        <div class="hero-sub">茨の道へ 突き立てた夢</div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar leftbar">
+        <div class="user-card">
+          <button class="mini-icon" id="homeUser" type="button" aria-label="回到首頁"><img src="assets/images/user-icon.png" alt="USER 頭貼"></button>
+          <div class="user-copy"><strong>森原あおい</strong><br><a class="user-link" href="https://steadfastspirits.carrd.co/" target="_blank" rel="noopener noreferrer">Link</a></div>
+        </div>
+
+        <div class="sidebar-divider" aria-hidden="true"></div>
+
+        <nav class="menu-panel" aria-label="Main menu">
+          <div class="menu-heading">MENU</div>
+          <div class="menu-stack">
+            <button data-route="posting">POSTING</button>
+            <button data-route="gallery">GALLERY</button>
+            <button data-route="character">CHARACTER</button>
+            <button data-route="garupa">GARUPA</button>
+          </div>
+        </nav>
+
+        <div class="sidebar-divider sidebar-divider-after-menu" aria-hidden="true"></div>
+        <div class="sidebar-counter" aria-label="Days since open">
+          <div class="counter-number" id="sidebarCounter">0001</div>
+          <div class="counter-caption">since 2017-04-02</div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="app" aria-live="polite"></main>
+
+      <aside class="sidebar rightbar">
+        <section class="dialogue-panel">
+          <div class="dialogue-head"><span aria-hidden="true"></span><span class="dialogue-status">● online</span></div>
+          <div class="chat-stream" id="chatStream"></div>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site-footer">© <span id="year"></span> 森原あおい</footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="關閉">×</button>
+    <img src="" alt="預覽圖片">
+    <div class="gallery-lock" id="galleryLock" hidden>
+      <div class="gallery-lock-form">
+        <input id="galleryPassword" type="password" inputmode="numeric" maxlength="4" placeholder="0000" aria-label="四字密碼">
+        <button id="galleryUnlock" type="button" aria-label="送出密碼">→</button>
+      </div>
+    </div>
+    <div class="lightbox-credit" id="lightboxCredit"></div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
